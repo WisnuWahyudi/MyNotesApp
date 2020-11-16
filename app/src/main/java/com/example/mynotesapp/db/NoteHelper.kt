@@ -71,6 +71,6 @@ class NoteHelper(context: Context) {
     }
 
     fun deleteById(id : String) : Int{
-        return database.delete(DATABE_TABLE, "${DatabaseContract.NoteColumns._ID} = '$id'",null)
+        return database.delete(DATABE_TABLE, "${DatabaseContract.NoteColumns._ID} = '$id' ",null)
     }
 }
